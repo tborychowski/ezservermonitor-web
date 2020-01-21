@@ -3,8 +3,8 @@
         "version": "2.5",
         "website": "http://www.ezservermonitor.com",
         "check_updates": true,
-        "auto_refresh": 0,
-        "theme": "blue",
+        "auto_refresh": 60,
+        "theme": "dark",
         "custom_title": ""
     },
     "cpu": {
@@ -12,8 +12,8 @@
     },
     "disk": {
         "show_tmpfs": false,
-        "show_loop": false,
         "show_filesystem": true,
+        "show_loop": false,
         "ignore_mounts": []
     },
     "ping": {
@@ -30,42 +30,24 @@
     "services": {
         "show_port": true,
         "list": [
-            {
-                "name": "Web Server",
-                "host": "localhost",
-                "port": 80,
-                "protocol": "tcp"
-            },
-            {
-                "name": "Email Server (incoming)",
-                "host": "localhost",
-                "port": 993,
-                "protocol": "tcp"
-            },
-            {
-                "name": "Email Server (outgoing)",
-                "host": "localhost",
-                "port": 587,
-                "protocol": "tcp"
-            },
-            {
-                "name": "FTP Server",
-                "host": "localhost",
-                "port": 21,
-                "protocol": "tcp"
-            },
-            {
-                "name": "Database Server",
-                "host": "localhost",
-                "port": 3306,
-                "protocol": "tcp"
-            },
-            {
-                "name": "SSH",
-                "host": "localhost",
-                "port": 22,
-                "protocol": "tcp"
-            }
+            { "name": "Web Server", "host": "localhost", "port": 80, "protocol": "tcp" },
+            { "name": "SSH", "host": "localhost", "port": 22, "protocol": "tcp" },
+            { "name": "DNS Server", "host": "localhost", "port": 53, "protocol": "tcp" },
+            { "name": "SAMBA", "host": "localhost", "port": 139, "protocol": "tcp" },
+
+			{ "name": "Confluence (wiki)", "host": "localhost", "port": 8090, "protocol": "tcp" },
+			{ "name": "Clarkson (car)", "host": "localhost", "port": 3010, "protocol": "tcp" },
+			{ "name": "Miniflux (RSS)", "host": "localhost", "port": 5010, "protocol": "tcp" },
+            { "name": "Calibre-web (ebooks)", "host": "localhost", "port": 8083, "protocol": "tcp" },
+            { "name": "Komga (comics)", "host": "localhost", "port": 3020, "protocol": "tcp" },
+			{ "name": "Plex", "host": "192.168.1.11", "port": 32400, "protocol": "tcp" },
+
+			{ "name": "Jackett (idx proxy)", "host": "localhost", "port": 9117, "protocol": "tcp" },
+			{ "name": "Bazarr (subs)", "host": "localhost", "port": 6767, "protocol": "tcp" },
+			{ "name": "Radarr (movies)", "host": "localhost", "port": 7878, "protocol": "tcp" },
+            { "name": "Sonarr (shows)", "host": "localhost", "port": 8989, "protocol": "tcp" },
+
+			{ "name": "Zakupnik", "host": "localhost", "port": 3000, "protocol": "tcp" }
         ]
     }
 }
