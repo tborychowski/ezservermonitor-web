@@ -30,24 +30,27 @@
     "services": {
         "show_port": true,
         "list": [
-            { "name": "Web Server", "host": "localhost", "port": 80, "protocol": "tcp" },
             { "name": "SSH", "host": "localhost", "port": 22, "protocol": "tcp" },
             { "name": "DNS Server", "host": "localhost", "port": 53, "protocol": "tcp" },
-            { "name": "SAMBA", "host": "localhost", "port": 139, "protocol": "tcp" },
+            { "name": "Web Server", "host": "localhost", "port": 80, "protocol": "tcp" },
 
-			{ "name": "Confluence (wiki)", "host": "localhost", "port": 8090, "protocol": "tcp" },
-			{ "name": "Clarkson (car)", "host": "localhost", "port": 3010, "protocol": "tcp" },
-			{ "name": "Miniflux (RSS)", "host": "localhost", "port": 5010, "protocol": "tcp" },
-            { "name": "Calibre-web (ebooks)", "host": "localhost", "port": 8083, "protocol": "tcp" },
-            { "name": "Komga (comics)", "host": "localhost", "port": 3020, "protocol": "tcp" },
-			{ "name": "Plex", "host": "192.168.1.11", "port": 32400, "protocol": "tcp" },
 
-			{ "name": "Jackett (idx proxy)", "host": "localhost", "port": 9117, "protocol": "tcp" },
-			{ "name": "Bazarr (subs)", "host": "localhost", "port": 6767, "protocol": "tcp" },
-			{ "name": "Radarr (movies)", "host": "localhost", "port": 7878, "protocol": "tcp" },
+            { "name": "Zakupnik", "host": "localhost", "port": 3000, "protocol": "tcp" },
+            { "name": "Clarkson (car)", "host": "localhost", "port": 3010, "protocol": "tcp" },
+            { "name": "Statping", "host": "localhost", "port": 3040, "protocol": "tcp" },
+            { "name": "Bitwarden", "host": "localhost", "port": 3050, "protocol": "tcp" },
+            { "name": "Miniflux (RSS)", "host": "localhost", "port": 5010, "protocol": "tcp" },
+
+            { "name": "Bazarr (subs)", "host": "localhost", "port": 6767, "protocol": "tcp" },
+            { "name": "Mailcow", "host": "localhost", "port": 7443, "protocol": "tcp" },
+            { "name": "Radarr (movies)", "host": "localhost", "port": 7878, "protocol": "tcp" },
+            { "name": "Confluence (wiki)", "host": "localhost", "port": 8090, "protocol": "tcp" },
             { "name": "Sonarr (shows)", "host": "localhost", "port": 8989, "protocol": "tcp" },
+            { "name": "Adguard", "host": "localhost", "port": 9002, "protocol": "tcp" },
+            { "name": "Jackett (idx proxy)", "host": "localhost", "port": 9117, "protocol": "tcp" },
 
-			{ "name": "Zakupnik", "host": "localhost", "port": 3000, "protocol": "tcp" }
+            { "name": "Plex", "host": "192.168.1.11", "port": 32400, "protocol": "tcp" }
+
         ]
     }
 }
